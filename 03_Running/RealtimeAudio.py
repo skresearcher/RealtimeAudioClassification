@@ -30,7 +30,7 @@ SpectrumVariables=None
 ringBuffer = RingBuffer(28672*2)
 pa = None
 
-def LoadModel(ModelPath="../models/CatDogResNet.pth"):
+def LoadModel(ModelPath="../models/GuitarClassification.pth"):
     global model
     global SpectrumVariables
     global classes
@@ -144,9 +144,9 @@ def startProgram(targetLength=20,NumOutput=2):
 
 stream = None
 
-def RunProgram(targetLength=20,AmmountOfClassesToDisplay=2,ModelPath="../models/CatDogResNet.pth"):
+def RunProgram(targetLength=20,AmmountOfClassesToDisplay=2,ModelPath="../models/GuitarClassification.pth"):
     print("Loading Model");
-    LoadModel(ModelPath="../models/CatDogResNet.pth")
+    LoadModel(ModelPath="../models/GuitarClassification.pth")
     print("Opening Audio Channel");
     cv2.startWindowThread()
     global stream
